@@ -1,0 +1,25 @@
+[package]
+name = "tfplanshow"
+version = "0.1.0"
+edition = "2021"
+description = "Renders `terraform show -json` plan output as a clean, grouped summary — creates, updates, deletes, and replacements called out prominently"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/tfplanshow"
+readme = "README.md"
+keywords = ["terraform", "plan", "infrastructure", "cli", "iac"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "tfplanshow"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tfplanshow"
+path = "src/main.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
