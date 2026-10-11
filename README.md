@@ -9,6 +9,12 @@ the handful of `-/+` replacements buried among routine `~` updates is
 exactly the kind of thing worth a dedicated view for, especially in a
 CI job's log output where the full plan text scrolls by unread.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
